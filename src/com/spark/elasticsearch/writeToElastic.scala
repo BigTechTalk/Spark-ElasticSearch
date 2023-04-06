@@ -31,7 +31,7 @@ object writeToElastic {
       .option("es.nodes", "localhost") // ElasticSearch host
       .mode("append") 
       .save("usedcarspark/doc") // indexname/document type     
-      println("Done");
+
      spark.stop();
   }
  
